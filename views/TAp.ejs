@@ -1,0 +1,24 @@
+<button class="test">Button</button>
+<script type="text/javascript">
+
+  $(".test").click(
+
+      function(){
+
+        console.log("It worked");
+        //where I am posting to, what I am posting, and what to call back
+          io.socket.post('/game/initMap', {}, function(res){
+              console.log(res);
+          });
+
+      }
+
+  )
+
+
+</script>
+
+
+//res.send
+//res.JSON
+//these get back responses

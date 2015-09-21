@@ -1,0 +1,26 @@
+<!--Using custom styling here-->
+<%- block('localStyles', '<link href="/extraCSS/gameLobby.css" rel="stylesheet">') %>
+
+<div id="isFull" class="hideMe"><%= isFull %></div>
+<div id="gameID" class="hideMe"><%= gameID %></div>
+
+<div class = "container">
+  <div class = "jumbotron">
+    <h3>Risk Game Lobby</h3>
+  </div>
+  <div id="wrapperGL" class="clearfix">
+    <div id="leftGL" class="clearfix">
+      <p>Players: </p>
+    </div>
+    <div id="rightGL" class="clearfix">
+
+    </div>
+  </div>
+  <div id="chatGL" class="clearfix">
+  </div>
+  <form id="chatForm">
+    <input id="chatInput" autocomplete="off" /><button>Send</button>
+  </form>
+</div>
+
+<%- block('localScripts', '<script src="/js/lobby.js"></script><script src="/js/chat.js"></script>') %>

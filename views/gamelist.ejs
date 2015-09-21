@@ -1,0 +1,56 @@
+<%- block('localStyles', '<link href="/extraCSS/gameList.css" rel="stylesheet">') %>
+
+<div id="container" class="clearfix">
+	<div class="col-md-6 center-block">
+    	<button id="JoinGame" name="JoinGame" class="btn btn-primary btn-lg center-block mainBtn">
+        	Join New Game
+    	</button>
+	</div>
+	<div class="col-md-6 center-block">
+    	<button id="CurrentGames" name="CurrentGames" class="btn btn-primary btn-lg center-block mainBtn">
+        	Current Games
+    	</button>
+	</div>
+
+	<!-- CURRENT GAMES TABLE -->
+		    <table id="currentTable" class="col-md-12 center text-center table table-hover">
+        <thead>
+            <tr>
+                <th>Game ID</th>
+                <th>Game Name</th>
+                <th>Round</th>
+                <th>Player's Turn</th>
+                <th>Play Game</th>
+            </tr>
+        </thead>
+        <tbody id="currentTableTbody">
+           
+        </tbody>
+    </table>
+
+	<!-- JOIN GAME TABLE -->
+	    <table id="joinTable" class="col-md-6 center text-center table table-hover hidden">
+        <thead>
+            <tr>
+                <th>Game ID</th>
+                <th>Game Name</th>
+                <th>Players</th>
+                <th>Privacy Status</th>
+                <th>Join</th>
+            </tr>
+        </thead>
+        <tbody id="joinTableTbody">
+
+        </tbody>
+    </table>
+
+
+    <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-xs-4 col-xs-offset-4">
+    	<a class="btn btn-primary center-block btn-lg" href="/game/create">
+        	Create Game
+    	</a>
+	</div>
+
+</div>
+
+<%- block('localScripts', '<script src="/extraJS/GameLobby.js"></script>') %>

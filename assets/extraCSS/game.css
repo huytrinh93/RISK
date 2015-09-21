@@ -1,0 +1,92 @@
+.panelHead {
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+.panelBody {
+  height: 270px;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+}
+
+#regionName {
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.panelFooter {
+  padding-top: 20px;
+}
+
+.disabled {
+  color: #999;
+}
+
+.numIcons
+{
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 15;
+  background-color: #FFFFE0;
+  border: 2px solid black;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+}
+#gameName {
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px;
+}
+
+/* Players In Panel */
+
+.playerInPanel {
+  display: block;
+}
+
+.playerColor {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+.playerName {
+  vertical-align: text-bottom;
+  padding-left: 5px;
+}
+
+#p1Color {
+  background-color: #36FF7C;
+}
+
+#p2Color {
+  background-color: #FF36B9;
+}
+
+#p3Color {
+  background-color: #52A3FF;
+}
+
+#p4Color {
+  background-color: #FFAE52;
+}
+
+#p5Color {
+  background-color: #E8FF52;
+}
+
+#p6Color {
+  background-color: #FF0000;
+}
+
+/* Players In Panel */
+
+.numIcons {
+  pointer-events: none;
+}

@@ -1,0 +1,28 @@
+<form action="/game/create" method="POST" id="create-game" class="form-signin">
+	<h2 class="form-create-game">Create Game</h2>
+
+
+	<div class="control-group">
+	<input type="text" class="form-control" placeholder="Game Name" name="gameName" id="gameName">
+	</div>
+
+	<div class="control-group">
+	<input type="password" class="form-control" placeholder="Password (Optional)" name="password" id="password">
+	</div>
+
+	<div class="control-group">
+	<select style="border-radius: 5px; height: 40px;" id="numPlayers">
+	  <option value="2">Two Players</option>
+	  <option value="3">Three Players</option>
+	  <option value="4">Four Players</option>
+	  <option value="5">Five Players</option>
+	  <option value="6">Six Players</option>
+
+	</select>
+	</div>
+	<br>
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Create Game"/>
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Cancel"/>
+</form>
+
+<%- block('localScripts', '<script src="/js/gameCreate.js"></script>') %>

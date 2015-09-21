@@ -1,0 +1,28 @@
+<form action="/user/create" method="POST" id="sign-up-form" class="form-signin">
+	<h2 class="form-signin-heading">Create Game Account</h2>
+
+
+	<div class="control-group">
+	<input type="text" class="form-control" placeholder="Username" name="name">
+	</div>
+
+	<div class="control-group">
+	<input type="text" class="form-control" placeholder="User Title" name="title">
+	</div>
+
+	<div class="control-group">
+	<input type="text" class="form-control" placeholder="Email" name="email">
+	</div>
+
+	<div class="control-group">
+	<input type="password" class="form-control" placeholder="Password" name="password" id="password">
+	</div>
+
+	<div class="control-group">
+	<input type="password" class="form-control" placeholder="Confirm Password" name="confirmation">
+	<br />
+	</div>
+
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Create Account"/>
+	<input type="hidden" name="_csrf" value="<%= _csrf %>" />
+</form>

@@ -1,0 +1,27 @@
+#container {
+	width: 50%;
+	min-height: 500px;
+	background-color: gray;
+	border-radius: 20px;
+
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+	overflow-x: hidden;
+
+	padding-bottom: 30px;
+}
+
+.mainBtn {
+	margin-top: 50px;
+}
+
+th {
+	text-align: center;
+	font-size: large;
+}
+
+td{
+	font-size: large;
+}

@@ -1,0 +1,85 @@
+/***********
+***COLORS***
+***********/
+@white: #FFFFFF;
+@green: #9EC03B;
+@orange: #F48744;
+@blue: #189ECA;
+@gray: #777574;
+@lightgray: #ECECEC;
+@black: #1C1C1C;
+@darkblue: #106E8D;
+@darkgray: #4A4A4A;
+@red: #016565;
+
+body
+	{
+		padding-top: 60px;
+		padding-bottom: 40px;
+		background-color: @darkgray;
+		/*background: url('http://i.imgur.com/n7TwziA.jpg') no-repeat center center fixed;*/
+		background: url('/images/bg.png') no-repeat center center fixed;
+		background-size: cover;
+	}
+
+.jumbotron
+	{
+		text-align: center;
+		background-color: @gray;
+	}
+
+.jumbotron h2
+	{
+		font-size: 1.5em;
+		letter-spacing: -1px;
+		margin-bottom: 30px;
+		text-align: center;
+		font-weight: normal;
+		text-color: @black;
+	}
+
+.container .gray
+	{
+		color: gray;
+	}
+
+.container
+	{
+		.footer
+			{
+				width: 25%;
+			}
+	}
+
+.form-signin
+	{
+		max-width: 30%;
+		padding: 19px 29px 29px;
+		margin: 0 auto 20px;
+		margin-top: 20px;
+		background-color: @gray;
+		//border: 1px solid @black;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+			h2
+				{
+					text-align: center;
+					text-color: @lightgray;
+					margin-top: 0px;
+				}
+	}
+.form-signin input[type="text"],
+.form-signin input[type="password"]
+	{
+		font-size: 16px;
+		background-color: @lightgray;
+		height: auto;
+		margin-bottom: 15px;
+		padding: 7px 9px;
+		text-color: @black;
+	}
+
+.hideMe {
+	display: none;
+}
