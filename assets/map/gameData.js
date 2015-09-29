@@ -97,7 +97,10 @@ var Neighbours = {
 	WesternAustralia: ['Indonesia','NewGuinea','EasternAustralia'],
 	EasternAustralia: ['NewGuinea','WesternAustralia'],
 }
-
+/*
+ * create border for objecr regions
+ * x, y on coordinate
+ */
 
 var CenterPoints = {
 	Alaska: {x: 86, y: 159},
@@ -189,8 +192,9 @@ var ArmyPoints = {
 	EasternAustralia: {x: 1546, y: 957}
 }
 
-
+//name of 32 regions
 /*
+
 temp {
 	Alaska: 
 	NorthWestTerritory: 
