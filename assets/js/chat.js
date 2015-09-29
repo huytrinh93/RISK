@@ -1,7 +1,10 @@
+//create chat form
 $('#chatForm').submit(function(e){
 	e.preventDefault();
+	//make input
 	var msg =  $('#chatInput').val();
 	var gameID = parseInt($('#gameID').text());
+	//create socket.io and posting chat to server
 	io.socket.post("/game/chat", {gameID: gameID, message: msg}, function (data, jwres) {
 		console.log(data);
 	});
@@ -9,7 +12,7 @@ $('#chatForm').submit(function(e){
 	$('#chatInput').val('');
 	return false;
 });
-
+//connect socket.io
 io.socket.on('connect', function socketConnected() {
 
 	io.socket.on('games', function chatMessage(message) {
@@ -19,5 +22,5 @@ io.socket.on('connect', function socketConnected() {
 			$("#chatGL").scrollTop($("#chatGL")[0].scrollHeight);
 		}
 	});
-
+//end of update chat
 });

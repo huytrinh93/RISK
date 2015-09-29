@@ -1,3 +1,4 @@
+//require connection using socket.io to server
 var io = require('socket.io');
 var express = require('express');
 var app = express.createServer();
