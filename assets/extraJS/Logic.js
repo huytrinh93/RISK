@@ -1,5 +1,3 @@
-
-
 var num_player=3; //was game.players.length trying to debug
 
 //function that initialize the map
